@@ -1,0 +1,186 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 25%;
+    padding: 20px;
+    background-color: #282828;
+    color: #fff;
+}
+
+.main-content {
+    width: 75%;
+    padding: 20px;
+}
+
+h2, h3 {
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+/* Song List Styling */
+#song-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#song-list li {
+    padding: 10px;
+    border-bottom: 1px solid #444;
+    cursor: pointer;
+}
+
+#song-list li:hover {
+    background-color: #444;
+}
+
+/* Genre Filter Styling */
+#genre-filter {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Song Card Styling */
+#song-card {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#song-image {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#song-name {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+#artist-name {
+    font-size: 18px;
+    color: #555;
+}
+
+audio {
+    width: 100%;
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #1db954;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1ed760;
+}
+
+/* Playlist Section Styling */
+#playlist-section {
+    text-align: center;
+}
+
+#playlist-name {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#playlist-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#playlist-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+#playlist-list li:hover {
+    background-color: #ddd;
+}
+
+/* Toggle Theme Button */
+#toggle-theme-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: #1db954;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#toggle-theme-btn:hover {
+    background-color: #1ed760;
+}
+
+/* Dark Theme Styling */
+.dark-theme {
+    background-color: #181818;
+    color: #fff;
+}
+
+.dark-theme .sidebar {
+    background-color: #333;
+}
+
+.dark-theme #song-list li {
+    border-bottom: 1px solid #555;
+}
+
+.dark-theme #song-list li:hover {
+    background-color: #555;
+}
+
+.dark-theme #genre-filter {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-theme #playlist-list li {
+    border-bottom: 1px solid #555;
+}
+
+.dark-theme #playlist-list li:hover {
+    background-color: #555;
+}
+
